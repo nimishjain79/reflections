@@ -30,3 +30,9 @@ How do the diagrams help you visualize the branch structure?
 1. We can identify the common commit node for two or more branches.
 2. We can identify the changes done in specific branch and confirm it using 'git log'
 3. If we checkout any historical commit, make changes, and commit, unless we don't label it with branch-name, this commit will lost.
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+1. All the code from branching point for both the branches has been merged as a single commit (snapshot)
+2. It was a simple merge that resulted into a single label, in this case master. 
+3. The other label can be deleted as it is redundant now, because all the commits of that other label are reachable from master branch.
+4. So that the master branch remains in the left.
