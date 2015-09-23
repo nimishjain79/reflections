@@ -1,0 +1,16 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+1. When you initialize a repository, a new folder, .git gets created
+
+1a. .git folder contains the metadata related to this repository
+
+2. At this point of time, system has not done any commit for you
+
+3. Any files and sub-folders in that folder might be a part of that repository
+
+4. Using git status, you can figure out the list of new/updated files that are not yet added/commited into the repository
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+1. Staging area is a space where we add new files that we want to add in the repository as a single logical commit.
+1a. It gives flexibility to user to group files logically that we want to add in the repository as a single commit.
+2. Repository might not contain all the files/sub-folders of the directory
