@@ -10,7 +10,12 @@ What happens when you initialize a repository? Why do you need to do it?
 
 4. Using git status, you can figure out the list of new/updated files that are not yet added/commited into the repository
 
+
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 1. Staging area is a space where we add new files that we want to add in the repository as a single logical commit.
 1a. It gives flexibility to user to group files logically that we want to add in the repository as a single commit.
 2. Repository might not contain all the files/sub-folders of the directory
+
+How can you use the staging area to make sure you have one commit per logical change?
+1. You can add only those files (changes) from working directory to staging area that you want to commit as a logical change.
+2. Any changes in the working directory, which has not been added into staging area will not be commited into repository.
