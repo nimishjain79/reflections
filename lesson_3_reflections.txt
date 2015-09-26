@@ -13,4 +13,10 @@ Describe the differences between forks, clones, and branches. When would you use
 2a. Clone will also set the remote repository to point to the repository on GitHub
 2b. Clone will be used when we want to create a local repository
 3. Branch will label a set of reachable commits, and any new commit on checkout branch will further the branch by one commit
-3a. Branch will be created when we are working on some stuff which might not need to be available to others (for various reasons); we can always merge two branches when required.
+3a. Branch will be created when we are working on some stuff which might not need to be available to others (for various reasons); we can always merge two branches when required
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+1. If the local repository and remote have additional commits after push/pull, then things will be out of sync
+2. To keep thing in sync, we need to fetch the remote so that all the all the commits post push/pull will be available in local repository origin/master branch
+3. Then local repository master and origin/master branches can be merged, and then resolving conflicts, if any
+4. This is same as git pull origin master, and then resolving conflicts, if any
