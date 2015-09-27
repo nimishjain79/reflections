@@ -20,3 +20,6 @@ What is the benefit of having a copy of the last known state of the remote store
 2. To keep thing in sync, we need to fetch the remote so that all the all the commits post push/pull will be available in local repository origin/master branch
 3. Then local repository master and origin/master branches can be merged, and then resolving conflicts, if any
 4. This is same as git pull origin master, and then resolving conflicts, if any
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+1. I can't imagine collaborating without using Git/GitHub
